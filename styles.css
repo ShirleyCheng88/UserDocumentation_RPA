@@ -1,0 +1,329 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.TextTop{
+    position: fixed;
+width: 377px;
+height: 31px;
+left: 60px;
+top: 1px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+
+color: #000000;
+}
+/* keysight icon style */
+.KeysightTop{
+    position: fixed;
+    width: 53px;
+    height: 38px;
+    left: -16px;
+    top: 13px;
+    
+    /* background: url(image.png); */
+}
+.cutLine{
+    position: fixed;
+    width: 100vw;
+    height: 0px;
+    left: 0px;
+    top: 62px;
+    
+    border: 1.2px solid #E6E6E6;
+    transform: rotate(0.08deg); 
+}
+.headContainer{
+    z-index: 9999; 
+    position: fixed;
+    width: 100vw;
+    height: 62px;
+    left: 0px;
+    top: 0px;
+    
+    background: #fdfdfd;
+    opacity: 100;
+}
+.grayBack{
+    position: fixed;
+width: 306px;
+height: 100vh;
+left: 0px;
+top: 62px;
+
+background: #828282;
+opacity: 0.15;
+
+}
+
+
+/* menu style */
+.menuLocation{
+    position: fixed; 
+    /* height:300px;
+    width: 300px; */
+    top:50px;
+     left:1px;
+     overflow: auto; 
+     height:94vh;
+    
+    /* background-color: #f2f2f2;     */
+}
+.scrollable{
+  height: 100vh; /* Set the height to 400 pixels */
+  overflow: auto; /* Enable scrolling when content overflows */
+}
+
+
+
+ .myList{
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    margin-bottom:-10px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color:rgb(61, 60, 60);
+    
+    /* margin: 0;    */
+} 
+.myList li
+{
+  /* background-color: #f2f2f2; */
+    padding-top: 8px; 
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 3px;;
+    margin-top:10px; 
+    margin-bottom:-4px; 
+  
+}
+
+/* .clickMenu 
+{
+    color:rgb(61, 60, 60);
+    text-decoration: none;
+    display: inline-block; 
+   position:fixed;
+    
+}  */
+.clickMenu 
+{
+    color:rgb(61, 60, 60);
+    text-decoration: none;
+    display: inline-block; 
+   
+    
+}
+
+.clickMenu:hover{
+  
+  background-color:rgba(231, 156, 156, 0.344); /* set the background color */
+  opacity: 0.8;
+  border-radius: 1px;
+
+}
+.clickMenu:active{
+  
+  background-color:rgba(231, 156, 156, 0.344); /* set the background color */
+  opacity: 0.8;
+  border-radius: 1px;
+}
+
+.active-menu {
+  background-color:rgba(231, 156, 156, 0.508); /* set the background color */
+  height: 41px; /* set the height */
+  width:40;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.active-menu-website06 {
+  background-color:rgba(231, 156, 156, 0.508); /* set the background color */
+  height: 32px; /* set the height */
+  width:220px;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding-left:9px;
+  padding-top: 10px;
+  
+}
+
+
+.textContainer{
+    position: absolute;
+    left:320px;
+   
+    top:62px;
+    
+    right:400px;
+    bottom:0;
+    
+}
+/*title 1*/
+  .title01 {
+    font-size: 46px;
+    /* position: absolute; */
+    margin-left:20px;
+    margin-right: 0;
+    margin-top: 18px;
+    margin-bottom: 0;
+    line-height:1.5em;
+   
+  }
+  .title02{
+    font-size: 35px;
+    /* position: absolute; */
+    margin-left:20px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height:1.5em;
+  }
+  .title03{
+    font-size: 30px;
+    /* position: absolute; */
+    margin-left:20px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height:1.5em;
+  }
+  .mainText{
+    font-size: 18px;
+   
+    /* position: absolute;*/
+    margin-left:20px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    line-height:2.5em;  
+    color: #313030;
+  }
+  
+  img{
+    margin-left:20px;
+    margin-bottom: 15px;
+    
+  }
+  .imageContainer {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+  }
+  
+  .imageName {
+    font-size: 15px;
+    font-style: italic;
+    margin-left:20px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+   
+    /* padding-left: 311px; */
+    /* background-color: #000; */
+    color: #4d4949;
+    
+  }
+  
+  
+  
+  .note
+  {
+    background-color: rgba(212, 212, 212, 0.515);
+    padding: 8px 3px 8px 10px;
+    opacity: 1; 
+  }
+  
+  .linkText 
+  {
+  color:rgb(206, 11, 11);           
+  }
+  .link_document{
+    color:rgb(206, 11, 11);  
+    text-decoration: none;
+  }
+
+  .redLine{
+  width: 61vw;
+  height: 3px;
+  left: 0px;
+
+  margin-top: 1pxpx;
+
+  background: rgb(206, 11, 11);
+  opacity: 0.15;
+}
+.underline {
+  position: relative;
+  
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30.5vw;
+  transform: translateX(-50%);
+  width: 61vw;
+  height: 3px;
+  background-color: rgb(206, 11, 11);
+}
+
+/* .upline {
+  position: relative;
+  
+}
+.upline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30.5vw;
+  transform: translateX(-50%);
+  width: 61vw;
+  height: 2px;
+  background-color: rgb(206, 11, 11);
+} */
+.parent {
+  position: relative;
+  width: 280px;
+  height: 20px;
+
+  
+}
+
+.child {
+  position: absolute;
+  top: 35px;
+  left: -4px;
+  width: 260px;
+  height: 42px;
+  /* background-color: rgb(206, 11, 11); */
+  
+}
+
+
+pre {
+  background-color: #f5f5f5;
+  padding:5px;
+  overflow-x: auto;
+  text-align: left;
+}
+
+code {
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+  font-size: 14px;
+  color: #333;
+  padding-left: 2px;
+  
+}
+
+.code-container {
+  margin: 0px 0; 
+  padding-left: 20px;
+}
+
+codeColor{
+  color: #2b9e3a;
+}

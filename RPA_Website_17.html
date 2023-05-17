@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPA Documentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="myscript.js"></script>
+   
+    </head>
+    <body>
+    <div class="headContainer">
+        <img class="KeysightTop" src="iconkeysight.png" alt="keysight icon" width="53" height="38" top="22" left="7">
+        <p class="TextTop">
+        PathWave Instrument RPA Documentation   
+        </p>
+        <div class="cutLine"></div>
+    </div>
+    
+    <div class="grayBack"></div>
+    
+    
+    <div>
+        <div class="menuLocation">
+            <ul class="myList">
+                
+             <li><a href="index.html" class="clickMenu" >Quick Start Guide</a>
+                     
+                
+                      <ul class="myList">
+                       <Li><a href="RPA_Website_02.html" class="clickMenu">Installation</a></Li>
+                        <li><a href="RPA_Website_03.html" class="clickMenu">Tour RPA</a></li>
+                        <li><a href="RPA_Website_04.html" class="clickMenu">Add Your First Connection</a></li>
+                        <li><a href="RPA_Website_05.html" class="clickMenu">Set Up Your First Auto-Test</a></li>
+                    </ul>
+                    </li>
+                   <Li>Using RPA Guide
+                   
+                 
+                        <ul class="myList">
+                            <li>
+                                <a href="RPA_Website_18.html" class="clickMenu">Project Management</a>
+                            </li>
+                            <Li><a href="RPA_Website_06.html" class="clickMenu">Connections to DUTs</a>
+                              
+                                    <ul class="myList">
+                                        <li>
+                                            <a href="RPA_Website_11.html" class="clickMenu">RDP Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_12.html" class="clickMenu">VNC Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_13.html" class="clickMenu">URL Connection Example</a>
+                                        </li>
+                                        <li>
+                                            <a href="RPA_Website_14.html" class="clickMenu">EXE Connection Example</a>
+                                        </li>
+                                      
+    
+    
+                                    </ul>
+                            </Li>
+                            <li>Session Automations
+                            
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_07.html" class="clickMenu">Create and Run a Session</a></li>
+                                    <Li><a href="RPA_Website_08.html" class="clickMenu">Parameterization</a></li>
+                                </ul>
+                            </li>
+                            <li>Workflow Automations
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_09.html" class="clickMenu">Create and Run a Workflow</a></li>
+                                        <Li><a href="RPA_Website_10.html" class="clickMenu">Visual Script Editor</a></li>
+                                </ul>
+                            </li>
+                            <li>API Calling
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_15.html" class="clickMenu">RPA API Reference</a></li>
+                                    <Li><a href="RPA_Website_16.html" class="clickMenu">Eggplant Synergy API</a>
+                                        <ul class="myList">
+                                            <div class="active-menu" > <li>
+                                                <a href="RPA_Website_17.html" class="clickMenu">API Calling Example</a>
+                                            </li></div>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </Li>
+            </ul>
+    </div>
+    </div>
+      
+  
+
+    <div class="textContainer">
+        <h1 class="title01">
+            Eggplant Script Example to Run RPA API
+        </h1>
+        <div class="mainText">
+            <p>
+                We provide several detailed examples of how to run RPA API  with Eggplant. These examples include: 
+                
+            </p>
+            <ul>
+                <li>
+                    <a href="#example1" class="link_document">Playback Session example</a> 
+                </li>
+                <li>
+                    <a href="#example2" class="link_document">Check Session Playback example</a>
+                </li>
+                <li>
+                    <a href="#example3" class="link_document">Playback Workflow example</a>
+                </li>
+                <li>
+                    <a href="#example4" class="link_document"> Stop Playback Workflow example</a>
+                </li>
+                <li>
+                    <a href="#example5" class="link_document"> All Sessions/Workflows Details example</a>
+                </li>
+            </ul>
+            <p id="example1" >
+                In addition to these examples, there are many more RPA API functions available in the <a href="RPA_Website_15.html" class="link_document"> RPA API Reference documentation</a>. By following these examples, you will be able to interact with RPA using the API, and gain a better understanding of the various functions and features available through the API.
+            </p>
+        </div>
+       
+
+    
+        <div class="mainText">
+            <p class="underline" style="color: rgb(206, 11, 11); font-size: 20px;" >
+                <b><i>  Playback Session Example</i></b>
+                
+            </p>
+          <p >
+            1. Create a new API Test named <b>"PlaybackSession"</b> using the GET method. Set the URL to: 
+          </p>
+          <p>
+            <b>URL Example:</b>
+          </p>
+        </div>
+
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/SessionPlayback?projectname=MyProject01&connectionname=PowerSupply&sessionname=Session1
+            </code>
+        </pre>
+        </div>
+
+        <div class="imageContainer">
+            <img src="13_1.png" alt=" Five key elements of the graphic language in RPA" width="613" height="361.12">
+            <div style="padding-left:185px;" class="imageName" left="10px">
+              Example: Playback Session API Tests 
+            </div>
+           
+        </div>
+
+        <div class="mainText">
+           <p>
+            This API Test requires three parameters :
+           </p>
+           <ul>
+            <li>
+                projectname: MyProject01
+            </li>
+            <li>
+                connectionname: PowerSupply
+            </li>
+            <li>
+                sessionname: Session1
+            </li>
+           </ul>
+           <p>
+            Ensure that you adapt the parameter values to meet your specific requirements.
+           </p>
+           <p>
+            2. Call the <b>"PlaybackSession"</b> API Test in a script. This script sends an API request to play back a Session, retrieves the id field from the JSON response, and stores it in a variable named idValue, which is then displayed. Here's an example script:
+           </p>
+           <p>
+            <b>Script Example:</b>
+           </p>
+        </div>
+         
+       
+
+
+         <div class="code-container">
+            <pre>
+                <code>
+<div style="color:#3e793ed3;">//  Make the API call and store the response into the "response" object</div>
+ put PlaybackSession() into response
+                    
+<div style="color:#3e793ed3;">//  Store the response body in a variable called "responseBody"</div>
+ put response.responseBody into responseBody
+                    
+<div style="color:#3e793ed3;">// Parse the response body into a JSON object</div>
+ set jsonResponse to  JSONValue(responseBody)
+                    
+<div style="color:#3e793ed3;">//  Get the value of the "id" field from the JSON object and store it in a variable called "idValue"</div>
+ put jsonResponse.id into idValue
+   
+<div style="color:#3e793ed3;">// Display the value of the "idValue" variable, this variable can be used in stop Session playback and check Session playback test. </div>
+ put idValue
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+           
+            <p>
+                To playback a Session with different parameters, you can overwrite the API Test properties. In this example, we will change the value of the sessionname parameter to play back a different Session by overwriting the URL used in the "PlaybackSession" API test :
+            </p>
+            <p>
+              <b>Script Example:</b>
+            </p>
+          </div>
+
+          <div class="code-container" id="example2">
+            <pre>
+                <code>
+ PlaybackSession{url:"http://localhost:3950/api/v1/SessionPlayback?projectname=MyProject01&connectionname=PowerSupply&sessionname=Session2"}
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p class="underline" style="color: rgb(206, 11, 11); font-size: 20px;" >
+                <b><i>  Check Session Playback Example</i></b>
+                
+            </p>
+          <p>
+            1. Create a new API Test named <b>"CheckSessionPlayback"</b> using GET method, set the URL to:
+          </p>
+          <p>
+            <b>URL Example:</b>
+          </p>
+        </div>
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/CheckSessionPlayback?playbackid=16970
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p>
+             This API Test requires one parameter :
+            </p>
+            <ul>
+             <li>
+                playbackid: 16970
+             </li>
+            </ul>
+            <p>
+                The Session Playback ID can be obtained from the response of the "PlaybackSession" API Test, which can then be used as a parameter in the "CheckSessionPlayback" API Test.
+            </p>
+            <p>
+                2. Call the  <b>"CheckSessionPlayback"</b> API Test in a script. This script calls the "CheckSessionPlayback" API test and displays the response body of the response.
+            </p>
+            <p>
+             <b>Script Example:</b>
+            </p>
+         </div>
+
+         <div class="code-container">
+            <pre>
+                <code>
+<div style="color:#3e793ed3;">//  Call the CheckSessionPlayback API test and store the response in the "response" object</div>
+ put CheckSessionPlayback() into response
+                    
+<div style="color:#3e793ed3;">// Display the response body of the response</div>
+ put response.responseBody
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+           
+          <p>
+            You can also input the Playback ID value which is stored as idValue when running the PlaybackSession script in the last example.
+          </p>
+          <p>
+            <b>Script Example:</b>
+           </p>
+         
+        </div>
+
+        <div id="example3" class="code-container">
+            <pre>
+                <code>
+                    <div style="color:#3e793ed3;">//  Make the API call and store the response into the "response" object</div>
+ put PlaybackSession() into response
+                                       
+                   <div style="color:#3e793ed3;">//  Store the response body in a variable called "responseBody"</div>
+ put response.responseBody into responseBody
+                                       
+                   <div style="color:#3e793ed3;">// Parse the response body into a JSON object</div>
+ set jsonResponse to  JSONValue(responseBody)
+                                       
+                   <div style="color:#3e793ed3;">//  Get the value of the "id" field from the JSON object and store it in a variable called "idValue"</div>
+ put jsonResponse.id into idValue
+                      
+                   <div style="color:#3e793ed3;">// Display the value of the "idValue" variable, this variable can be used in stop Session playback and check Session playback test. </div>
+ put idValue
+
+                    <div style="color:#3e793ed3;">// call the CheckSessionPlayback API test input the Playback ID value which is stored as idValue </div>
+ <b>CheckSessionPlayback{url:"http://localhost:3950/api/v1/CheckSessionPlayback?playbackid="&idValue}</b>
+
+                    <div style="color:#3e793ed3;">// Call the CheckSessionPlayback API test and store the response in the "response" object </div>
+ put CheckSessionPlayback() into response
+
+                    <div style="color:#3e793ed3;">//Display the response body of the response</div>
+ put response.responseBody
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p class="underline" style="color: rgb(206, 11, 11); font-size: 20px;" >
+                <b><i>  Playback Workflow Example</i></b>
+                
+            </p>
+          <p>
+            1. Create a new API Test named <b>"PlaybackWorkflow"</b> using GET method, set the URL to:
+          </p>
+          <p>
+            <b>URL Example:</b>
+          </p>
+        </div>
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/WorkflowPlayback?projectname=MyProject01&workflowname=Workflow1
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p>
+             This API Test requires two parameters:
+            </p>
+            <ul>
+             <li>
+                projectname: MyProject01
+             </li>
+             <li>
+                workflowname: Workflow01
+             </li>
+            </ul>
+            <p>
+                Ensure that you adapt the parameter values to meet your specific requirements.
+            </p>
+            <p>
+                2. Call the <b>"PlaybackWorkflow"</b> API Test in a script. This script makes an API call to play back a Workflow, extracts the id field from the JSON response, and stores it in a variable called idValue, which is then displayed.
+            </p>
+            <p>
+             <b>Script Example:</b>
+            </p>
+         </div>
+
+         <div class="code-container">
+            <pre>
+                <code>
+<div style="color:#3e793ed3;">// Make the API call and store the response into the "response" object</div>
+ put PlaybackWorkflow() into response
+
+                    
+<div style="color:#3e793ed3;">//  Store the response body in a variable called "responseBody"</div>
+ put response.responseBody into responseBody
+
+
+<div style="color:#3e793ed3;">//  Parse the response body into a JSON object</div>
+ set jsonResponse to  JSONValue(responseBody)
+
+
+<div style="color:#3e793ed3;">// Get the value of the "id" field from the JSON object and store it in a variable called "idValue"</div>
+ put jsonResponse.id into idValue
+
+
+<div style="color:#3e793ed3;">// Display the value of the "idValue" variable</div>
+ put idValue
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+           
+          <p>
+            You can playback a Workflow with different parameters by overwrite API Test Properties. This example overwrites the URL used in the API test “PlaybackWorkflow". We changed the value of workflowname from “Workflow1” to “Workflow2”  to playback another Workflow.
+          </p>
+          <p>
+            <b>Script Example:</b>
+           </p>
+         
+        </div>
+
+        <div id="example4" class="code-container">
+            <pre>
+                <code> 
+ PlaybackWorkflow(url:"http://localhost:3950/api/v1/WorkflowPlayback?projectname=MyProject01&workflowname=Workflow2")
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p class="underline" style="color: rgb(206, 11, 11); font-size: 20px;" >
+                <b><i> Stop Playback Workflow Example</i></b>
+                
+            </p>
+          <p>
+            1. Create a new API Test named <b>"StopPlaybackWorkflow"</b> using GET method, set the URL to:
+          </p>
+          <p>
+            <b>URL Example:</b>
+          </p>
+        </div>
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/StopWorkflowPlayback?playbackid=17284
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p>
+             This API Test requires one parameter:
+            </p>
+            <ul>
+             <li>
+                playbackid: 17284
+             </li>
+
+            </ul>
+            <p>
+                The Workflow Playback ID can be obtained from the response of the "PlaybackWorkflow" API Test we create in the last example, which can then be used as a parameter in the "StopPlaybackWorkflow“ API Test.
+            </p>
+            <p>
+                2. Call the <b>"StopPlaybackWorkflow"</b> API Test in a script. This script calls the StopWorkflowPlayback API test and displays the response body of the response.
+            </p>
+            <p>
+             <b>Script Example:</b>
+            </p>
+         </div>
+
+         <div class="code-container">
+            <pre>
+                <code>
+<div style="color:#3e793ed3;">// Call the StopWorkflowPlayback API test and store the response in the "response" object</div>
+put StopWorkflowPlayback() into response
+
+                    
+<div id="example5" style="color:#3e793ed3;">// Display the response body of the response</div>
+put response.responseBody
+
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p class="underline" style="color: rgb(206, 11, 11); font-size: 20px;" >
+                <b><i> All Sessions/Workflows Details Example </i></b>
+                
+            </p>
+          <p>
+            1. Create a new API Test named <b>"AllSessionsDetails"</b> using GET method, set the URL to:
+          </p>
+          <p>
+            <b>URL Example:</b>
+          </p>
+        </div>
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/AllSessionsDetails
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            
+          <p>
+            Create a new API Test named <b>"AllWorkflowsDetails"</b> using the GET method. Set the URL to: 
+           
+          </p>
+          <p>
+            <b>URL Example:</b>
+          </p>
+        </div>
+
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/AllWorkflowsDetails
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+           
+            <p>
+                2. Call the two API Tests in a script. This script makes API calls to retrieve details of all sessions and workflows, and displays the corresponding response bodies.
+            </p>
+            <p>
+             <b>Script Example:</b>
+            </p>
+         </div>
+
+         <div class="code-container">
+            <pre>
+                <code>
+<div style="color:#3e793ed3;">//  Make API call to get details of all Sessions</div>
+ put AllSessionsDetails() into response
+
+                    
+<div style="color:#3e793ed3;">// Display the response body containing Sessions details</div>
+ put response.responseBody
+
+
+<div style="color:#3e793ed3;">//  Make API call to get details of all Workflows</div>
+ put AllWorkflowsDetails() into response
+
+                    
+<div style="color:#3e793ed3;">// Display the response body containing Workflows details</div>
+ put response.responseBody
+
+            </code>
+        </pre>
+        </div>
+
+        <br>
+        <br>
+
+         </div>
+
+ </body>
+</html>
+

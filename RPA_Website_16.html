@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPA Documentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+    </head>
+    <body>
+    <div class="headContainer">
+        <img class="KeysightTop" src="iconkeysight.png" alt="keysight icon" width="53" height="38" top="22" left="7">
+        <p class="TextTop">
+        PathWave Instrument RPA Documentation   
+        </p>
+        <div class="cutLine"></div>
+    </div>
+    
+    <div class="grayBack"></div>
+    
+    
+    <div>
+        <div class="menuLocation">
+            <ul class="myList">
+                
+             <li><a href="index.html" class="clickMenu">Quick Start Guide</a>
+                     
+                
+                      <ul class="myList">
+                       <Li><a href="RPA_Website_02.html" class="clickMenu">Installation</a></Li>
+                        <li><a href="RPA_Website_03.html" class="clickMenu">Tour RPA</a></li>
+                        <li><a href="RPA_Website_04.html" class="clickMenu">Add Your First Connection</a></li>
+                        <li><a href="RPA_Website_05.html" class="clickMenu">Set Up Your First Auto-Test</a></li>
+                    </ul>
+                    </li>
+                   <Li>Using RPA Guide
+                   
+                 
+                        <ul class="myList">
+                            <li>
+                                <a href="RPA_Website_18.html" class="clickMenu">Project Management</a>
+                            </li>
+                            <Li><a href="RPA_Website_06.html" class="clickMenu">Connections to DUTs</a>
+                              
+                                    <ul class="myList">
+                                        <li>
+                                            <a href="RPA_Website_11.html" class="clickMenu">RDP Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_12.html" class="clickMenu">VNC Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_13.html" class="clickMenu">URL Connection Example</a>
+                                        </li>
+                                        <li>
+                                            <a href="RPA_Website_14.html" class="clickMenu">EXE Connection Example</a>
+                                        </li>
+                                      
+    
+    
+                                    </ul>
+                            </Li>
+                            <li>Session Automations
+                            
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_07.html" class="clickMenu">Create and Run a Session</a></li>
+                                    <Li><a href="RPA_Website_08.html" class="clickMenu">Parameterization</a></li>
+                                </ul>
+                            </li>
+                            <li>Workflow Automations
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_09.html" class="clickMenu">Create and Run a Workflow</a></li>
+                                        <Li><a href="RPA_Website_10.html" class="clickMenu">Visual Script Editor</a></li>
+                                </ul>
+                            </li>
+                            <li>API Calling
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_15.html" class="clickMenu">RPA API Reference</a></li>
+                                    <Li><div class="active-menu-website06"><a href="RPA_Website_16.html" class="clickMenu">Eggplant Synergy API</a></div>
+                                        <ul class="myList">
+                                            <li>
+                                                <a href="RPA_Website_17.html" class="clickMenu">API Calling Example</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </Li>
+            </ul>
+    </div>
+    </div>
+      
+  
+
+    <div class="textContainer">
+        <h1 class="title01">
+            Eggplant Synergy API
+        </h1>
+        <br>
+
+        <div class="mainText">
+            Integrating Eggplant with PathWave Instrument RPA can enhance your automation capabilities and streamline your workflow. The Eggplant Synergy API allows you to easily send requests and interact with RPA through API calls, enabling you to automate your testing process and improve your productivity. In this chapter, we will walk you through the steps and examples to use the Eggplant Synergy API to call PathWave Instrument RPA and perform various automation tasks.
+        </div>
+
+        <h2 class="title02">
+            Run RPA API Tests from Eggplant Functional
+        </h2>
+        <div class="mainText">
+          <p>
+            1. Create a <b>New API Test</b>. In the Eggplant Studio pane, click <b>API Testes</b> to open the API Test Editor. To create a new API test in Eggplant, simply <b>right-click</b> inside the API Tests pane and select <b>New API Test</b>. The new test opens in its own tab in the API Test Editor view in the center pane. You can run and edit API tests in the API Test Editor in Eggplant Functional. See <a href="https://docs.eggplantsoftware.com/legacy/ePF/using/epf-api-testing.htm" class="linkText">Eggplant API Testing</a> for more details.
+
+          </p>
+        </div>
+
+        <div class="imageContainer">
+            <img src="12_1.png" alt=" Five key elements of the graphic language in RPA" width="321" height="344">
+            <div style="padding-left:25px;" class="imageName" left="10px">
+               API Tests icon in Eggplant Studio Interface
+            </div>
+           
+        </div>
+
+        <div class="mainText">
+           <p>
+            For example, to retrieve the details of Sessions in a Project using the RPA API, you create an API test named <b>"SessionDetails"</b>. And then set the HTTP method to "GET" and input the appropriate URL in the address bar. This URL can be obtained from the <a href="RPA_Website_15.html" class="link_document">RPA API Reference documentation</a>. After creating the API test, you can click the green <b>Run</b> button to test whether the API test can be run successfully. In the example provided, we use the following URL: 
+           </p>
+           <p>
+            <b>URL Example:</b>
+        </p>
+        </div>
+         
+        <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:3950/api/v1/SessionDetails?projectname=MyProject01
+            </code>
+        </pre>
+        </div>
+
+        <div class="imageContainer">
+            <img src="12_2.png" alt=" The API Reference documentation of RPA" width="435" height="279">
+            <div style="padding-left: 130px;" class="imageName" left="10px">
+                API Test Editor in Eggplant
+            </div>
+            <br>
+        </div>
+
+        <div class="mainText">
+            <p>
+                2.  Invoke API tests through Script. Create a SenseTalk <b>Script</b> to call API test. Use the api( ) Function to access all the properties of an API test, including both the request and response. 
+            </p>       
+            <p>
+                For example here, we create a script to run the API test we created named “SessionDetails” to display and check the response. 
+            </p>
+            
+            <p>
+                <b>Script Example:</b>
+            </p>
+         </div>
+
+         <div class="code-container">
+            <pre>
+                <code>
+<div style="color:#3e793ed3;">// Make the API call and store the response into RSD object</div>
+put SessionDetails() into RSD
+                    
+<div style="color:#3e793ed3;">// Display the URL in the response object</div>
+put RSD.url
+                    
+<div style="color:#3e793ed3;">// Display the response headers in the response object</div>
+put RSD.responseHeaders
+                    
+<div style="color:#3e793ed3;">// Display the response body in the response object</div>
+put RSD.responseBody
+                    
+<div style="color:#3e793ed3;">// Verify that the URL in the response object contains "MyProject01" using an assertion</div>
+assert RSD.url contains "MyProject01" 
+            </code>
+        </pre>
+        </div>
+
+        <br>
+        <br>
+
+         <div class="imageContainer">
+            <img src="12_3.png" alt=" The API Reference documentation of RPA" width="614" height="392">
+            <div style="padding-left: 175px;" class="imageName" left="10px">
+                An example of executing the API method
+            </div>
+            
+        </div>
+
+        <div class="mainText">
+            
+            
+            <p>
+                Check out our <a href="RPA_Website_17.html" class="link_document">API Calling Examples</a> for more detailed examples on how to run RPA API using Eggplant Functional.
+            </p>
+           
+         </div>
+
+       <br>
+       <br>
+
+         </div>
+
+ </body>
+</html>

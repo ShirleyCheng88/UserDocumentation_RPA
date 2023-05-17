@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPA Documentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <div class="headContainer">
+        <img class="KeysightTop" src="iconkeysight.png" alt="keysight icon" width="53" height="38" top="22" left="7">
+        <p class="TextTop">
+        PathWave Instrument RPA Documentation   
+        </p>
+        <div class="cutLine"></div>
+    </div>
+    
+    <div class="grayBack"></div>
+    
+    
+    <div>
+        <div class="menuLocation">
+            <ul class="myList">
+                
+             <li><a href="index.html" class="clickMenu">Quick Start Guide</a>
+                     
+                
+                      <ul class="myList">
+                       <Li><a href="RPA_Website_02.html" class="clickMenu">Installation</a></Li>
+                        <li><a href="RPA_Website_03.html" class="clickMenu">Tour RPA</a></li>
+                        <li><a href="RPA_Website_04.html" class="clickMenu">Add Your First Connection</a></li>
+                        <li><a href="RPA_Website_05.html" class="clickMenu">Set Up Your First Auto-Test</a></li>
+                    </ul>
+                    </li>
+                   <Li>Using RPA Guide
+                   
+                 
+                        <ul class="myList">
+                            <li>
+                                <a href="RPA_Website_18.html" class="clickMenu">Project Management</a>
+                            </li>
+                            <Li><a href="RPA_Website_06.html" class="clickMenu">Connections to DUTs</a>
+                              
+                                    <ul class="myList">
+                                         <li>
+                                            <a href="RPA_Website_11.html" class="clickMenu">RDP Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_12.html" class="clickMenu">VNC Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_13.html" class="clickMenu">URL Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_14.html" class="clickMenu">EXE Connection Example</a>
+                                        </li>
+    
+                                      
+    
+    
+                                    </ul>
+                            </Li>
+                            <li>Session Automations
+                        
+                                <ul class="myList">
+                                    <div class="active-menu"><Li><a href="RPA_Website_07.html" class="clickMenu">Create and Run a Session</a></li></div>
+                                    <Li><a href="RPA_Website_08.html" class="clickMenu">Parameterization</a></li>
+                                </ul>
+                            </li>
+                            <li>Workflow Automations
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_09.html" class="clickMenu">Create and Run a Workflow</a></li>
+                                        <Li><a href="RPA_Website_10.html" class="clickMenu">Visual Script Editor</a></li>
+                                </ul>
+                            </li>
+                            <li>API Calling
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_15.html" class="clickMenu">RPA API Reference</a></li>
+                                    <Li><a href="RPA_Website_16.html" class="clickMenu">Eggplant Synergy API</a>
+                                        <ul class="myList">
+                                            <li>
+                                                <a href="RPA_Website_17.html" class="clickMenu">API Calling Example</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </Li>
+            </ul>
+    </div>
+    </div>
+      
+
+        <div class="textContainer">
+            <h1 class="title01">
+                Create and run a Session 
+            </h1>
+
+            <div class="mainText">
+                <p>
+                    In RPA, Session refers to a period of interaction between a DUT and a user. During a Session, RPA records and emulates the actions of a human user, such as clicking buttons, entering data, or navigating pages, in order to complete a specific task.
+                </p>
+                <p>
+                    This chapter provides guidance on:
+        
+                </p>
+                <ul>
+                    <li>
+                        Step-by-Step Guide to Create a Session
+                    </li>
+                    <li>
+                        Step-by-Step Guide to Run a Session
+                    </li>
+                    <li>
+                        Step-by-Step Guide to Rename or Delete a Session
+                    </li>
+                </ul>
+             
+            </div>
+
+            <h2 class="title02">
+                Step by step to create a Session
+            </h2>
+            <div class="mainText">
+               <p>
+                 1. Select a connection in which you want to create a Session.
+               </p>
+               <p>
+                 2. Click the <b>Record</b> button to record a new Session.
+               </p>
+               <p>
+                3. RPA will record a period of interaction automatically. You can create a parameter during this time. To read more details of Parameterize , see <a class="link_document" href="RPA_Website_08.html">Parameterization</a>.
+               </p>
+               <p>
+                4. Click the <b>Stop Recording</b> button to end the new Session.
+               </p>
+            </div>
+
+            <div class="imageContainer">
+                <img src="7_1.png" alt="The New Connection dialog box in RPA" width="190" height="120">
+                <div style="padding-left: 10px;" class="imageName" left="10px">
+                </div>
+                <br>
+            </div>
+
+            <div class="imageContainer">
+                <img src="7_2.png" alt="The Record button (left) and the Stop Recording button in a new session" width="231" height="120">
+                <div style="padding-left: 10px;" class="imageName" left="10px">
+                    The Record button and the Stop 
+                    Recording button in a new session
+                </div>
+                <br>
+            </div>
+
+            <div class="mainText">
+                <p>
+                  5. In the <b>Session Information</b> dialog box, enter a name for the Session in the <b>Name</b> field to identify the Session. The <b>Description</b> field is optional for you to add some descriptive text.
+                </p>
+             </div>
+
+             <div class="imageContainer">
+                <img src="7_3.png" alt="The Session Information dialog box in RPA" width="368" height="242">
+                <div style="padding-left: 40px;" class="imageName" left="10px">
+                    The Session Information dialog box in RPA
+                </div>
+                <br>
+            </div>
+
+            <div class="mainText">
+                <p>
+                    6. Click <b>Save</b> to save the session details and the new Session is added.
+
+                </p>
+             </div>
+                    <br>
+
+            <h2 class="title02">
+                Step by step to run a Session
+            </h2>
+
+            <div class="mainText">
+                <p>
+                    1. Click the Session name to see the Session drop-down list and select a target Session to run. 
+                </p>
+            </div>
+
+            <div class="imageContainer">
+                <img src="7_4.png" alt="The Session drop-down list in RPA" width="591" height="216">
+                <div style="padding-left: 150px;" class="imageName" left="10px">
+                    The Session drop-down list in RPA
+                </div>
+         
+            </div>
+
+            <div class="mainText">
+                <p class="note">
+                    <b>Note:</b>  By default, the last saved Session is the active Session.
+                </p>
+            </div>
+
+            <div class="mainText">
+                <p>
+                    2. Click the Playback button to run the active Session. 
+                </p>
+            </div>
+
+            <div class="imageContainer">
+                <img src="7_5.png" alt="The EXE Connection dialog box in RPA" width="514" height="100">
+                <div style="padding-left: 100px;" class="imageName" left="10px">
+                    The EXE Connection dialog box in RPA
+                </div>
+                <br>
+            </div>
+
+            <div class="mainText">
+               <p>
+                  3. Then the active Session will run and end automatically. You can also press <b>ESC</b> to cancel Playback actively.
+               </p>
+            </div>
+            
+            <br>
+            <h2 class="title02">
+                Step by step to rename or delete a Session
+            </h2>
+
+            <div class="mainText">
+                <p>
+                    To <b>rename</b> or <b>delete</b> a Session, click the <b>three-dot</b> icon located at the left side of the Session name. 
+                </p>
+            </div>
+
+            <div class="imageContainer">
+                <img src="7_6.png" alt="The Session drop-down list in RPA" width="549" height="154">
+                <div style="padding-left: 150px;" class="imageName" left="10px">
+                    Rename or delete a Session in RPA
+                </div>
+         
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <br>
+            <br>
+
+
+        </div>
+ </body>
+</html>

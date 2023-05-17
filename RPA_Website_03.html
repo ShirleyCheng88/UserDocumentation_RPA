@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPA Documentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <div class="headContainer">
+        <img class="KeysightTop" src="iconkeysight.png" alt="keysight icon" width="53" height="38" top="22" left="7">
+        <p class="TextTop">
+        PathWave Instrument RPA Documentation   
+        </p>
+        <div class="cutLine"></div>
+    </div>
+    
+    <div class="grayBack"></div>
+    
+    
+    <div>
+        <div class="menuLocation">
+            <ul class="myList">
+                
+             <li><a href="index.html" class="clickMenu">Quick Start Guide</a>
+                     
+                
+                      <ul class="myList">
+                       <Li><a href="RPA_Website_02.html" class="clickMenu">Installation</a></Li>
+                       <div class="active-menu"><li><a href="RPA_Website_03.html" class="clickMenu">Tour RPA</a></li></div>
+                        <li><a href="RPA_Website_04.html" class="clickMenu">Add Your First Connection</a></li>
+                        <li><a href="RPA_Website_05.html" class="clickMenu">Set Up Your First Auto-Test</a></li>
+                    </ul>
+                    </li>
+                   <Li>Using RPA Guide
+                   
+                 
+                        <ul class="myList">
+                            <li>
+                                <a href="RPA_Website_18.html" class="clickMenu">Project Management</a>
+                            </li>
+                            <Li><a href="RPA_Website_06.html" class="clickMenu">Connections to DUTs</a>
+                              
+                                    <ul class="myList">
+                                        <li>
+                                            <a href="RPA_Website_11.html" class="clickMenu">RDP Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_12.html" class="clickMenu">VNC Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_13.html" class="clickMenu">URL Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_14.html" class="clickMenu">EXE Connection Example</a>
+                                        </li>
+    
+                                      
+    
+    
+                                    </ul>
+                            </Li>
+                            <li>Session Automations
+                            
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_07.html" class="clickMenu">Create and Run a Session</a></li>
+                                    <Li><a href="RPA_Website_08.html" class="clickMenu">Parameterization</a></li>
+                                </ul>
+                            </li>
+                            <li>Workflow Automations
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_09.html" class="clickMenu">Create and Run a Workflow</a></li>
+                                        <Li><a href="RPA_Website_10.html" class="clickMenu">Visual Script Editor</a></li>
+                                </ul>
+                            </li>
+                            <li>API Calling
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_15.html" class="clickMenu">RPA API Reference</a></li>
+                                    <Li><a href="RPA_Website_16.html" class="clickMenu">Eggplant Synergy API</a>
+                                        <ul class="myList">
+                                            <li>
+                                                <a href="RPA_Website_17.html" class="clickMenu">API Calling Example</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </Li>
+            </ul>
+    </div>
+    </div>
+      
+  
+
+        <div class="textContainer">
+            <h1 class="title01">
+            Tour RPA
+            </h1>
+            <div class="mainText">
+                <p>
+             To get you started with the RPA software, this quick start guide will provide a brief overview of the interface and its key components.
+                </p>
+                <p>
+             The RPA interface consists of five main parts:
+                </p>
+                <ol type="1" style="color: rgb(208, 43, 43);">
+                    <b>
+                    <li>
+                        Project List
+                    </li>
+                    <li>
+                Connection List 
+                    </li>
+                    <li>
+                        Session list
+                    </li>
+                    <li>
+                        Record, Parameterization, Stop Recording, and Playback buttons
+                    </li>
+                    <li>
+                Viewer Window
+                    </li>
+                    <li>
+                Workflow Window
+                    </li>
+                    </b>
+                </ol>
+            </div>
+    
+            <div class="imageContainer">
+                <img src="3_1.png" alt="RPA Interface (a) " width="622" height="336">
+                <div style="padding-left: 250px;" class="imageName" left="10px">
+                RPA Interface (a)
+                </div>
+                <br>
+            </div>
+            
+            <div class="imageContainer">
+                <img src="3_2.png" alt="RPA Interface" width="622" height="336">
+                <div style="padding-left: 250px;" class="imageName" left="10px">
+                RPA Interface (b)
+                </div>
+            </div>
+
+
+            <h2 class="title02">Project List</h2>
+
+            <div class="mainText">
+                <p>
+                    The Project list in RPA is a key component of the interface that displays a list of all the projects that you have created and allows you to manage and organize them. Each project can contain multiple workflows, sessions, and other elements, making it easy to keep track of your RPA automation efforts. 
+                </p>
+                <p>
+                    In the Project list, you can create new projects, load existing projects, and perform various operations on them, such as renaming, cloning, or deleting. By using the Project list, you can easily manage and organize your RPA projects and streamline your automation workflows.
+                </p>
+            </div>
+
+
+            <h2 class="title02">Connection List</h2>
+
+            <div class="mainText">
+                <p>
+                 The Connection List is a component of the RPA interface that displays a list of all established connections to devices under test (DUTs). It displays the name of the device, its type, and the connection status, making it easy to manage and keep track of your connections. It allows users to manage and organize their connections and select a specific connection to work with in the RPA workflow.
+                </p>
+            </div>
+
+            <h2 class="title02">Session List</h2>
+
+            <div class="mainText">
+                <p>
+                The Session List is a key part of the RPA interface, located on the left side of the screen. This area displays a list of all the testing sessions you have created, allowing you to easily switch between them and access the relevant information and configurations.
+                </p>
+            </div>
+        
+            <h2 class="title02">Record, Parameterization, Stop recording, and Playback Buttons</h2>
+
+            <div class="mainText">
+                <p>
+                The four buttons on the RPA interface are essential tools for performing different testing tasks. These buttons are:
+                </p>
+                <ul>
+                    <li>
+                <b>Record: </b> button allows you to start recording a test session, capturing all the actions performed on the DUT.
+                    </li>
+                    <li>
+                <b>Param: </b>This button  enables you to create and modify parameters for the test session.
+                    </li>
+                    <li>
+                <b>Stop recording:</b> This button stops the recording process and saves the recorded test session.
+                    </li>
+                    <li><b>Playback: </b>This button runs the recorded test Session or designed Workflow  , automatically executing the actions performed on the DUT during the recording process.
+                    </li>
+                </ul>
+
+                <p>
+                These buttons provide an intuitive and user-friendly way to control and manage your RPA testing tasks, making it simple and efficient to automate your tests.
+                </p>
+            </div>
+
+            <h2 class="title02">Viewer Window</h2>
+
+            <div class="mainText">
+            The Viewer Window displays all the testing activities, including recorded test cases and their execution results. It is an essential tool for monitoring the progress of your test cases, troubleshooting issues, and evaluating the performance of your test automation efforts.
+            </div>
+
+            
+
+           
+
+            <h2 class="title02">Workflow Window</h2>
+
+            <div class="mainText">
+                <p>
+                The Workflow window is where you can create and manage your automation workflows. It displays a graphical representation of the steps involved in your automation process, and allows you to add, edit, and delete steps as needed. One of the key features of the Workflow window is the Visual Script Editor, which provides an intuitive, visual way to edit the parameters of each step in your Workflow. 
+                </p>
+                <p>
+                With the Visual Script Editor, you can easily modify the parameters of each step to meet your unique needs, without having to write any code. This makes the Workflow window a powerful and flexible tool for automating your testing tasks, and it is a key part of the RPA interface.
+                </p>
+            </div>
+            <br>
+
+        </div>
+ </body>
+</html>

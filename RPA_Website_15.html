@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPA Documentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <div class="headContainer">
+        <img class="KeysightTop" src="iconkeysight.png" alt="keysight icon" width="53" height="38" top="22" left="7">
+        <p class="TextTop">
+        PathWave Instrument RPA Documentation   
+        </p>
+        <div class="cutLine"></div>
+    </div>
+    
+    <div class="grayBack"></div>
+    
+    
+    <div>
+        <div class="menuLocation">
+            <ul class="myList">
+                
+             <li><a href="index.html" class="clickMenu">Quick Start Guide</a>
+                     
+                
+                      <ul class="myList">
+                       <Li><a href="RPA_Website_02.html" class="clickMenu">Installation</a></Li>
+                        <li><a href="RPA_Website_03.html" class="clickMenu">Tour RPA</a></li>
+                        <li><a href="RPA_Website_04.html" class="clickMenu">Add Your First Connection</a></li>
+                        <li><a href="RPA_Website_05.html" class="clickMenu">Set Up Your First Auto-Test</a></li>
+                    </ul>
+                    </li>
+                   <Li>Using RPA Guide
+                   
+                 
+                        <ul class="myList">
+                            <li>
+                                <a href="RPA_Website_18.html" class="clickMenu">Project Management</a>
+                            </li>
+                            <Li><a href="RPA_Website_06.html" class="clickMenu">Connections to DUTs</a>
+                              
+                                    <ul class="myList">
+                                        <li>
+                                            <a href="RPA_Website_11.html" class="clickMenu">RDP Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_12.html" class="clickMenu">VNC Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_13.html" class="clickMenu">URL Connection Example</a>
+                                        </li>
+                                        <li>
+                                            <a href="RPA_Website_14.html" class="clickMenu">EXE Connection Example</a>
+                                        </li>
+                                      
+    
+    
+                                    </ul>
+                            </Li>
+                            <li>Session Automations
+                            
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_07.html" class="clickMenu">Create and Run a Session</a></li>
+                                    <Li><a href="RPA_Website_08.html" class="clickMenu">Parameterization</a></li>
+                                </ul>
+                            </li>
+                            <li>Workflow Automations
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_09.html" class="clickMenu">Create and Run a Workflow</a></li>
+                                        <Li><a href="RPA_Website_10.html" class="clickMenu">Visual Script Editor</a></li>
+                                </ul>
+                            </li>
+                            <li>API Calling
+                              
+                                <ul class="myList">
+                                    <div class="active-menu"> <Li><a href="RPA_Website_15.html" class="clickMenu">RPA API Reference</a></li></div>
+                                    <Li><a href="RPA_Website_16.html" class="clickMenu">Eggplant Synergy API</a>
+                                        <ul class="myList">
+                                            <li>
+                                                <a href="RPA_Website_17.html" class="clickMenu">API Calling Example</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </Li>
+            </ul>
+    </div>
+    </div>
+      
+  
+
+    <div class="textContainer">
+        <h1 class="title01">
+            RPA API Calling
+        </h1>
+
+        <div class="mainText">
+            <p>
+                With the PathWave Instrument RPA API, you can send requests and interact with your Sessions and Workflows. This enables you to automate your testing process even further and seamlessly integrate RPA into your own Workflows. 
+            </p>
+            <p>
+                In this section, we will introduce how to use the API to run our RPA software product. The API documentation can be found at http://localhost:3950/api-docs#/. From this documentation, you can access various HTTP GET methods.
+            </p>
+         
+        </div>
+
+        <h2 class="title02">Localhost and Port number</h2>
+
+
+        
+        <div class="mainText">
+            <p>
+                Localhost is a hostname that refers to the current device used to access it. In the context of our RPA API, it implies that the API is running on the same machine as your RPA software. This allows you to access the API server directly from your device without having to rely on external servers or networks.
+
+            </p>
+            <p>
+                To access the API on localhost, simply open a web browser and enter the provided URL, such as http://localhost:3950/api-docs#/. If the API server is running correctly, you should see the API documentation page.
+            </p>
+          </div>
+
+
+        <div class="mainText">
+            <p>
+                The number "3950" in the example URL (http://localhost:3950/api-docs#/) represents the port number on which the API server is running. 
+
+            </p>
+            <p>
+                In our case, the API server listens to port 3950 for incoming requests. This means that when you access the API through the provided URL, your RPA software knows to send its requests to port 3950.
+            </p>
+          </div>
+
+          <h2 class="title02">Accessing the API</h2>
+
+
+        
+        <div class="mainText">
+            <p>
+                To access the API, simply enter the appropriate HTTP GET method in your browser or through a tool like Postman or curl. For example, to start a Session playback, use the following URL format:
+
+            </p>
+            <p>
+                <b>URL Example:</b>
+            </p>
+        </div>
+
+          <div class="code-container">
+            <pre>
+                <code>
+ http://localhost:6110/api/v1/SessionPlayback?projectname=Project%20Demo&connectionname=Temperature%20Chamber&sessionname=Session1
+
+            </code>
+        </pre>
+        </div>
+
+        <div class="mainText">
+            <p>
+                Replace "Project Demo", "Temperature Chamber", and "Session1" with the respective project name, connection name, and session name you want to execute.
+            </p>
+            <p>
+                By accessing the API through the provided methods, you can control and monitor your RPA software remotely, integrate it with other software systems, or even create custom front-end interfaces for your users.
+            </p>
+        </div>
+
+        <h2 class="title02">
+            RPA reference documentation
+        </h2>
+        <div class="mainText">
+          <p>
+            To access the PathWave Instrument RPA API Reference documentation, you can directtly go to url: "http://localhost:3950/api-docs#/". Another way to open  RPA reference documentation is by clicking the <b>Information and Technical Support</b> icon located in the top right corner of the RPA interface. From there, select the <b>API Reference</b> option to open the API Calling documentation. This documentation provides detailed information on the API methods and parameters you can use to interact with your RPA Sessions and Workflows programmatically.
+          </p>
+        </div>
+
+        <div class="imageContainer">
+            <img src="11_1.png" alt=" Five key elements of the graphic language in RPA" width="915" height="297.33">
+            <div style="padding-left: 345px;" class="imageName" left="10px">
+                API Reference in RPA
+            </div>
+           
+        </div>
+
+        <div class="mainText">
+           <p>
+            To access the details of an API method, click the corresponding <b>GET</b> method in the API Reference documentation. From there, click <b>Try it out</b> button to view the necessary parameters required to complete the method. Some methods may not require parameters.
+           </p>
+        </div>
+         
+
+        <div class="imageContainer">
+            <img src="11_2.png" alt=" The API Reference documentation of RPA" width="876" height="353">
+            <div style="padding-left: 280px;" class="imageName" left="10px">
+                API Reference documentation in RPA
+            </div>
+            
+        </div>
+
+        <div class="mainText">
+            <p>
+                For example, to play back a Session, enter the required parameters (Project Name, Connection Name, Session Name) and then click <b>Execute</b>.
+            </p>       
+         </div>
+
+         <div class="imageContainer">
+            <img src="11_3.png" alt=" The API Reference documentation of RPA" width="790.45" height="283">
+            <div style="padding-left: 235px;" class="imageName" left="10px">
+                An example of executing the API method
+            </div>
+            
+        </div>
+
+        <div class="mainText">
+            <p>
+                After executing the API method, a property list is returned, including the following information:
+
+            </p>
+           
+          </div>
+          <div class="mainText">
+            <ul>
+                <li>
+                <b>Curl:</b> The command line syntax used to execute the API method.
+
+                </li>
+                <li>
+                <b>Request URL:</b> The URL of the API endpoint used for the method.
+
+                </li>
+                <li>
+                <b>Response Body:</b> The JSON object returned by the method. The response body contains the data returned by the method, including any errors or warnings.
+                </li>
+                <li>
+                <b> Response Headers:</b> The HTTP headers included in the response. The response headers provide information about the response, such as the content type and length.
+                </li>
+            </ul>
+          </div>
+          
+          <div class="imageContainer">
+                <img src="11_4.png" alt=" The API Reference documentation of RPA" width="601" height="380">
+                <div style="padding-left: 140px;" class="imageName" left="10px">
+                    The response after executing the API method
+                </div>
+                <br>
+            </div>
+
+
+         </div>
+
+ </body>
+</html>

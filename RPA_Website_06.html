@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPA Documentation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <div class="headContainer">
+        <img class="KeysightTop" src="iconkeysight.png" alt="keysight icon" width="53" height="38" top="22" left="7">
+        <p class="TextTop">
+        PathWave Instrument RPA Documentation   
+        </p>
+        <div class="cutLine"></div>
+    </div>
+    
+    <div class="grayBack"></div>
+    
+    
+    <div>
+        <div class="menuLocation">
+            <ul class="myList">
+                
+             <li><a href="index.html" class="clickMenu">Quick Start Guide</a>
+                     
+                
+                      <ul class="myList">
+                       <Li><a href="RPA_Website_02.html" class="clickMenu">Installation</a></Li>
+                        <li><a href="RPA_Website_03.html" class="clickMenu">Tour RPA</a></li>
+                        <li><a href="RPA_Website_04.html" class="clickMenu">Add Your First Connection</a></li>
+                        <li><a href="RPA_Website_05.html" class="clickMenu">Set Up Your First Auto-Test</a></li>
+                    </ul>
+                    </li>
+                   <Li>Using RPA Guide
+                   
+                 
+                        <ul class="myList">
+                            <li>
+                                <a href="RPA_Website_18.html" class="clickMenu">Project Management</a>
+                            </li>
+                            <Li><div class="active-menu-website06"> <a href="RPA_Website_06.html" class="clickMenu">Connections to DUTs</a></div>
+                              
+                                    <ul class="myList">
+                                        <li>
+                                            <a href="RPA_Website_11.html" class="clickMenu">RDP Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_12.html" class="clickMenu">VNC Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_13.html" class="clickMenu">URL Connection Example</a>
+                                        </li>
+                                         <li>
+                                            <a href="RPA_Website_14.html" class="clickMenu">EXE Connection Example</a>
+                                        </li>
+    
+                                      
+    
+    
+                                    </ul>
+                            </Li>
+                            <li>Session Automations
+                            
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_07.html" class="clickMenu">Create and Run a Session</a></li>
+                                    <Li><a href="RPA_Website_08.html" class="clickMenu">Parameterization</a></li>
+                                </ul>
+                            </li>
+                            <li>Workflow Automations
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_09.html" class="clickMenu">Create and Run a Workflow</a></li>
+                                        <Li><a href="RPA_Website_10.html" class="clickMenu">Visual Script Editor</a></li>
+                                </ul>
+                            </li>
+                            <li>API Calling
+                              
+                                <ul class="myList">
+                                    <Li><a href="RPA_Website_15.html" class="clickMenu">RPA API Reference</a></li>
+                                    <Li><a href="RPA_Website_16.html" class="clickMenu">Eggplant Synergy API</a>
+                                        <ul class="myList">
+                                            <li>
+                                                <a href="RPA_Website_17.html" class="clickMenu">API Calling Example</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </Li>
+            </ul>
+    </div>
+    </div>
+      
+
+        <div class="textContainer">
+            <h1 class="title01">
+                Connections to DUTs
+            </h1>
+
+            <div class="mainText">
+                <p>
+                    The Device Under Test (DUT) is a key aspect of the RPA process. It represents the device or application that will be automated, serving as the target for the software robots to interact with and carry out the automated tasks.
+                </p>
+                <P>
+                    Some common types of DUTs that you can connect to our RPA include the following:<br>
+                    <b>Hardware devices:</b> These are physical devices that can be automated, such as a power supply, oscilloscope, temperature sensor, and even VR/AR glasses.<br>
+                    <b>Desktop applications:</b> These are applications that are installed on a desktop or laptop computer, such as Pathwave BenchVue Software, Microsoft Excel, Adobe Photoshop, or Google Chrome.<br>
+                    <b>Mobile applications: </b>These are applications that run on a mobile device, such as an Android or iOS smartphone or tablet.<br>
+                    <b> Web applications: </b>These are applications that run in a web browser, such as Gmail, Facebook, or Salesforce.<br>
+                </P>
+                <p>
+                    By defining and configuring the DUT connection in RPA, you can enable the automation of tasks across different types of devices and applications.<br>
+                </p>
+             
+            </div>
+     
+
+            <h2 class="title02">
+                Adding DUTs to the connection list
+            </h2>
+            <div class="mainText">
+                <ol>
+                    <li>
+                         Click the <b>Add Connection</b> button in the Connection Column to add a new connection.
+                    </li>
+                    <li>
+                        In the <b>Add New Connection</b> dialog box, select your targeted connection type from:<b> RDP, VNC, URL, or EXE</b>. To read about details of these 4 types of connections, see <a class="link_document" href="#four_connection_type"> Four Connection Types</a> below. 
+                    </li>
+                    <li>
+                        Enter a name for the connection in the <b>Connection Name </b>field to identify the connection. 
+                    </li>
+                    <li>
+                        Enter a description for the connection in the <b>Description</b>  field. Although this field is optional, it's useful to have descriptive text to identify the connection.
+                    </li>
+                    <li>
+                        Each connection includes the fields for entering DUT information. 
+                    </li>
+                    <li>
+                        Click <b>Connect</b> to save the connection details and the new connection is added.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="imageContainer">
+                <img src="6_1.png" alt="The New Connection dialog box in RPA" width="447" height="384" style="padding-left: 22px;">
+                <div id="four_connection_type"  style="padding-left: 105px;" class="imageName" left="10px">
+                    The New Connection dialog box in RPA
+                </div>
+                <br>
+            </div>
+
+            <h2  class="title02">
+                Four Connection Types
+            </h2>
+            <h3 class="title03">
+                RDP Connection
+            </h3>
+
+            <div class="mainText">
+                <p>
+                    In the <b>Add New Connection</b> dialog box, select <b>RDP</b> to create an RDP connection.
+                </p>
+                <ul>
+                    <li>
+                       <b>IP address: </b>IP address or hostname of the DUT you want to connect to. 
+                    </li>
+                    <li>
+                    <b>Port number:</b> RDP connections default to port 3389, but you can change this value in the port field if necessary.
+                    </li>
+                    <li>
+                    <b> Domain: </b>For RDP connections,  this information refers to the identity of a network domain, also known as a Windows domain. It is an optional information.
+                    </li>
+                    <li>
+                    <b> Username and Password:</b> For RDP connections, this information refers to the Windows user account for the DUT you are connecting to. This information is always required for RDP connections.
+                    </li>
+                </ul>
+                <p class="note">
+                   <b>Note:</b> You must also configure the DUT to accept the connection for RDP.
+
+                </p>
+                
+            </div>
+
+
+
+            <h3 class="title03">
+                VNC Connection
+            </h3>
+
+            <div class="mainText">
+                <p>
+                    In the <b>Add New Connection</b> dialog box, select <b>VNC</b> to create a VNC connection.
+                </p>
+                <ul>
+                    <li>
+                       <b>IP address:</b>  IP address or hostname of the DUT you want to connect to. 
+                    </li>
+                    <li>
+                    <b>Port number:</b>  For VNC connections, the port is set to 5900 by default. You can change the value in the Port field if necessary.
+                    </li>
+                    <li>
+                    <b> Password: </b>This field refers to the values for the VNC server on the DUT.
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="imageContainer">
+                <img src="6_4.png" alt="The VNC connection dialog box IN RPAP" width="322" height="246" style="padding-left: 22px;">
+                <div id="four_connection_type"  style="padding-left: 50px;" class="imageName" left="10px">
+                    The VNC connection dialog box IN RPA
+                </div>
+                <br>
+            </div>
+
+
+            <h3 class="title03">
+                URL Connection
+            </h3>
+
+            <div class="mainText">
+                <p>
+                    In the <b>Add New Connection</b> dialog box, select <b>URL</b> to create an URL connection.
+                </p>
+                <ul>
+                    <li>
+                       <b>IP address:</b> Enter the URL or IP address of a website you want to connect to. 
+                    </li>
+                    <li>
+                    <b>Port number:</b>  To see the port number of a URL, you can simply look for the port number in the URL string. The port number is usually located immediately following the domain name or IP address and is separated by a colon (":"). If the port number is not specified in the URL, the browser assumes the default port number for the protocol. For example, the default port number for HTTP is 80, and the default port number for HTTPS is 443.
+                    </li>
+                </ul>
+                <p class="note">
+                    <b>Note:</b>  For example, the URL "www.google.com" can be resolved to the IP address "172.217.16.174", which is the current IP address of the Google server. You can use the URL or IP address to create the connection successfully.
+                </p>
+                
+            </div>
+
+            
+
+            <h3 class="title03">
+                EXE Connection
+            </h3>
+
+            <div class="mainText">
+                <p>
+                    In the <b>Add New Connection</b> dialog box, select <b>EXE</b> to create an EXE connection.
+                </p>
+                <ul>
+                    <li>
+                       <b>Executable path:</b>  Select an executable file on your computer from the drop-down list of Executable paths.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="imageContainer">
+                <img src="6_8.png" alt="The EXE Connection dialog box in RPA" width="429" height="367">
+                <div style="padding-left: 75px;" class="imageName" left="10px">
+                    The EXE Connection dialog box in RPA
+                </div>
+                <br>
+            </div>
+
+            <div class="mainText">
+                
+                <p class="note">
+                    <b>Note:</b>  If you encounter playback issues with the EXE connection, right-click RPA and select Run Elevated to solve the problem.
+                </p>
+               
+            </div>
+
+           
+
+            <br>
+            <h2 class="title02">
+                Closing or Editing a DUT connection 
+            </h2>
+          
+            <div class="mainText">
+                <p>
+                    Click the <b>Pen</b> icon on the right side of each connection to open the <b>Edit Connection</b> dialog box. You can always edit the details of a connection or delete a connection here.
+                </p>
+            </div>
+
+            <div class="imageContainer">
+                <img src="6_11.png" alt="The Pen icon to edit/delete a connection in RPA" width="481" height="162">
+                <div style="padding-left: 80px;" class="imageName" left="10px">
+                    The Pen icon to edit/delete a connection in RPA
+                </div>
+                <br>
+            </div>
+
+            <div class="imageContainer">
+                <img src="6_12.png" alt="The Edit Connection dialog box in RPA" width="411" height="352">
+                <div style="padding-left: 65px;" class="imageName" left="10px">
+                    The Edit Connection dialog box in RPA
+                </div>
+                <br>
+            </div>
+        </div>
+ </body>
+</html>
